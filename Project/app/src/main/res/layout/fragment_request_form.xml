@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestForm"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Form"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#92434343"
+            android:gravity="left"
+            >
+
+            <EditText
+                android:id="@+id/RequestEdit"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:hint="State Your Request Here"
+                android:inputType="textMultiLine"
+                android:maxWidth="5dip"
+                android:maxLength="256"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/ReasonBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Why you Need?"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:background="#00000000"/>
+
+            <EditText
+                android:id="@+id/userNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/EmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/MobileEdit"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/CountryEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Country"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:background="#00000000"/>
+
+            <EditText
+                android:id="@+id/CityEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="City"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_pic"
+                tools:background="@drawable/button_style4" />
+
+            <LinearLayout
+                android:id="@+id/AddedPicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.0"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_weight="1.0"
+                    android:layout_width="0.0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:id="@+id/Cancel_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/start_button"
+                        android:backgroundTint="#F44"
+                        android:text="Cancel" />
+                    <Button
+                        android:id="@+id/Retry_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/start_button"
+                        android:layout_marginTop="30dp"
+                        android:text="Retry"
+                        android:backgroundTint="@color/colorAccent"/>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgView2"
+                    android:layout_width="81dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_pic"
+                    tools:background="@drawable/button_style3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

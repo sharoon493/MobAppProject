@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2310d4</color>
+    <color name="colorPrimaryDark">#000a8f</color>
+    <color name="colorAccent">#f7d322</color>
+    <color name="background_material_light">#eefcf235</color>
+    <color name="white">#ffffff</color>
+    <color name="colorStatus">#f3f1d237</color>
+    <color name="EditField">#a1070028</color>
+    <color name="ButtonBack">#55fff600</color>
+    <color name="Red">#8d2123</color>
+    <color name="primary_material_light_1">#ff5722</color>
+    <color name="primary_material_light_2">#ff5722</color>
+    <color name="accent_material_light">#f5b800</color>
+    <color name="primary_material_light">#1d00ac</color>
+    <color name="primary_dark_material_light">#bb47e5ed</color>
+</resources>

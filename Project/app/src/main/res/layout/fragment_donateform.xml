@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateformFragment"
+    android:layout_marginHorizontal="5dp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:background="@color/colorAccent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/DonateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:hint="Description about what you want to donate"
+                android:inputType="textMultiLine"
+                android:maxWidth="5dip"
+                android:maxLength="256"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp"
+                tools:background="@color/EditField" />
+
+            <EditText
+                android:id="@+id/ConditionEdit"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Condition"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp"
+                tools:background="@color/EditField" />
+            <EditText
+                android:id="@+id/userNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp"
+                tools:background="@color/EditField" />
+
+            <EditText
+                android:id="@+id/EmailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp"
+                tools:background="@color/EditField" />
+
+            <EditText
+                android:id="@+id/MobileEdit"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="20dp"
+                tools:background="@color/EditField" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/AddLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pin a Location"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="20dp"
+                    tools:background="@drawable/button_style4"/>
+
+                <ImageButton
+                    android:id="@+id/imgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_pic"
+                    tools:background="@drawable/button_style4" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/AddedPicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.0"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_weight="1.0"
+                    android:layout_width="0.0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:id="@+id/Cancel_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/start_button"
+                        android:backgroundTint="#F44"
+                        android:text="Cancel" />
+                    <Button
+                        android:id="@+id/Retry_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/start_button"
+                        android:layout_marginTop="30dp"
+                        android:text="Retry"
+                        android:backgroundTint="@color/colorAccent"/>
+
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/imgView2"
+                    android:layout_width="81dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1.0"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/add_pic"
+                    tools:background="@drawable/button_style3" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

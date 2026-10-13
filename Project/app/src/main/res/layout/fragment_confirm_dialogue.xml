@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmDialogue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RVLL"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/AddtoMysave"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Add to My Save"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:padding="2sp"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            />
+
+        <Button
+            android:id="@+id/Help"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Help"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:padding="2sp"
+            android:background="@drawable/button_style"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>
