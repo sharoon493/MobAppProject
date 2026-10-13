@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ErrorFragment"
+    android:id="@+id/errorl"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@drawable/button_style"
+    android:visibility="gone">
+    <ImageView
+        android:src="@drawable/error"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some Error Has Occured"
+        android:textSize="20dp"
+        android:textColor="#eadf00"
+        android:textStyle="bold"/>
+
+</LinearLayout>

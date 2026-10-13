@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Tab"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/RaiseBTN"
+        android:layout_weight="1.0"
+        android:padding="5dp"
+        android:text="Raise Requests"
+        android:textColor="#f1434343"
+        android:textStyle="bold"
+        android:src="@drawable/add_new_request"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        />
+    <ImageButton
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/add_new"
+        android:scaleType="fitCenter"
+        android:id="@+id/DonateBTN"
+        android:text="Donate Item"
+        android:textColor="#f1434343"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+
+        />
+
+</LinearLayout>
