@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:orientation="vertical"
+    android:background="@drawable/children_p">
+
+    <fragment
+        android:id="@+id/ReqFormFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.sharo.project.RequestForm"
+        android:layout_above="@id/RFormSubmitBtn"
+        android:layout_alignParentTop="true"
+        ></fragment>
+
+    <fragment
+        android:id="@+id/DonateFormFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.sharo.project.DonateformFragment"
+        android:layout_above="@id/RFormSubmitBtn"
+        android:layout_alignParentTop="true"
+        ></fragment>
+
+
+
+    <fragment
+        android:id="@+id/RFormSubmitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.sharo.project.FomBottomFrag">
+    </fragment>
+</RelativeLayout>

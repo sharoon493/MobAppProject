@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/button_style2"
+    android:layout_margin="5dp"
+    android:padding="8dp">
+    <RelativeLayout
+        android:id="@+id/RelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/PersonName"
+            android:text="PersonName"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="start"
+            />
+        <TextView
+            android:id="@+id/DateTime"
+            android:text="1/7/2019 5:47 AM"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:gravity="end"
+            />
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PersonName"
+            android:weightSum="2.0"
+            android:background="@drawable/button_style4">
+
+            <TextView
+                android:id="@+id/ReqDesc"
+                android:text="ReqDesc"
+                android:padding="5dp"
+                android:layout_weight="1.25"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentLeft="true"
+                android:maxWidth="5dip"
+                android:maxLength="256"
+                android:inputType="textMultiLine"
+                />
+            <ImageView
+                android:id="@+id/Donate_viewImage"
+                android:layout_width="0.0dp"
+                android:layout_weight="0.75"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
